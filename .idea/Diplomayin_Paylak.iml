@@ -78,5 +78,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="shop" />
+    <orderEntry type="module" module-name="shop" />
   </component>
 </module>

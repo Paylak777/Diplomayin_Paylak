@@ -103,8 +103,8 @@ AppAsset::register($this);
                             <ul class="navbar_menu">
                                 <?php
                                 $menuItems = [
-                                    ['label' => 'Home', 'url' => ['/site/index']],
-                                    ['label' => 'Shop', 'url' => ['/site/index']],
+                                    ['label' => 'Home', 'url' => ['/site']],
+                                    ['label' => 'Shop', 'url' => ['/products']],
                                     ['label' => 'About', 'url' => ['/site/about']],
                                     ['label' => 'Blog', 'url' => ['/site/blog']],
                                     ['label' => 'Contact', 'url' => ['/site/contact']],
