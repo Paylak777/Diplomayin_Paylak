@@ -14,7 +14,7 @@ use Yii;
  * @property string $slug
  *
  * @property BrandCat[] $brandCats
- * @property Products[] $product
+ * @property Products[] $products
  */
 class Categories extends \yii\db\ActiveRecord
 {

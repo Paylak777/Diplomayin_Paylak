@@ -13,7 +13,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
         'product' => [
-            'class' => 'frontend\modules\products\Module',
+            'class' => 'frontend\modules\product\Module',
         ],
     ],
     'components' => [

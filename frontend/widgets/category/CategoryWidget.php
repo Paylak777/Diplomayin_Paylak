@@ -21,8 +21,6 @@ class CategoryWidget extends Widget
             }])
             ->asArray()->all();
 
-        echo "<pre>";
-
         return $this->render('index',['categories' => $categories]);
     }
 

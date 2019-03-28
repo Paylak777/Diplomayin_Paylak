@@ -24,33 +24,7 @@ $this->title = 'My Yii Application';
 
 <!-- Banner -->
 
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="banner_item align-items-center" style="background-image:url(images/banner_1.jpg)">
-                    <div class="banner_category">
-                        <a href="categories.html">women's</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="banner_item align-items-center" style="background-image:url(images/banner_2.jpg)">
-                    <div class="banner_category">
-                        <a href="categories.html">accessories's</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="banner_item align-items-center" style="background-image:url(images/banner_3.jpg)">
-                    <div class="banner_category">
-                        <a href="categories.html">men's</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?= \frontend\widgets\category\CategoryWidget::widget();?>
 
 <!-- New Arrivals -->
 
@@ -108,12 +82,18 @@ $this->title = 'My Yii Application';
 
                                 </div>
                                 <div class="favorite favorite_left"></div>
-
+                                <?php
+                                if(!empty($product['is_new'])){
+                                    ?>
+                                    <div class="product_bubble product_bubble_left product_bubble_green d-flex flex-column align-items-center"><span>new</span></div>
+                                    <?php
+                                }
+                                ?>
                                 <?php
                                 if(!empty($product['sale_price'])){
                                     ?>
                                     <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center">
-                                        <span><?php echo $product['sale_price']/($product['price']/100)?>%</span>
+                                        <span><?php echo 100-($product['sale_price']/($product['price']/100))?>%</span>
                                     </div>
                                     <?php
                                 }

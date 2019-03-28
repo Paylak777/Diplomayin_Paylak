@@ -1239,6 +1239,10 @@ section
 {
 	display: inline-block;
 }
+.section_title2 h2{
+
+	margin-top:60px;
+}
 .section_title::after
 {
 	display: block;
