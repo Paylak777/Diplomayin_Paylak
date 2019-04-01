@@ -20,6 +20,10 @@ class AppAsset extends AssetBundle
         'plugins/OwlCarousel2-2.2.1/animate.css',
         'styles/main_styles.css',
         'styles/responsive.css',
+        'plugins/jquery-ui-1.12.1.custom/jquery-ui.css',
+        'styles/categories_styles.css',
+        'styles/categories_responsive.css',
+
     ];
     public $js = [
         'js/jquery-3.2.1.min.js',
@@ -29,6 +33,8 @@ class AppAsset extends AssetBundle
         'plugins/OwlCarousel2-2.2.1/owl.carousel.js',
         'plugins/easing/easing.js',
         'js/custom.js',
+        'plugins/jquery-ui-1.12.1.custom/jquery-ui.js',
+        'js/categories_custom.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
